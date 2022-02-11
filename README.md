@@ -30,18 +30,20 @@ not yet available
 ## Code and data guide
 The code is split into 3 jpuyter notebooks:
 1) **00a Matching_article.ipynb**: this notebook does the matching of ecoinvent products with exiobase products (typically representing product groups). 
+
 The notebook builds upon the following **data**:  
 * **_ecoinvent metadata_** on products/processes/geographies/units found in the `activity_overview_3.4_cut-off_LCIA_results.xlsx` in `data/ecoinvent`
 * _**Exiobase metadata**_ on product groups/geographies/units found in the `hiot_results_PTM_v2.xlsx` in `data/exiobase`
 * **_Matching data_** that describes the matching of ecoinvent products, processes and geographies to exiobase equivalents as specified in `Matching file.xlsx` in `data/matching`; additionally this folder contains a matching of ISIC codes to exiobase in the file `ISIC.xlsx`
 
-**Main output:** While the notebook generates a bunch of intermediate files (that can be found in the folder `results/2019-12-02_WW`, e.g. in `matching`), the main output is really `EItoEX_matching_results_HIOT_manual.xlsx` in `results/2019-12-02_WW/matching_results`. This file contains the matched carbon footprint results and useful metadata for all matched products between ecoinvent and exiobase. Virtually all of the analysis is based on this file.
+**Main output:** While the notebook generates a bunch of intermediate files (that can be found in the folder `results/2019-12-02_WW`, e.g. in `matching`), the main output is really `EItoEX_matching_results_HIOT_manual.xlsx` in `results/2019-12-02_WW/matching_results`. This file contains the matched carbon footprint results for all matched products between ecoinvent and exiobaseand useful metadata for filtering and further analysis. Virtually all of the analysis in the following notebooks is based on this file.
 
-2) **00b Analysis_article.ipynb**:
+2) **00b Analysis_article.ipynb**: this notebook contains basically all analysis presented in the paper. The figures are saved to `results/2019-12-02_WW/figures`.
 
+3) **00c Economic coverage_article.ipynb**: this notebook produces the data for the economic/sectoral coverage of both databases (Table 1 in the article). 
 
-3) **00c Economic coverage _article.ipynb**:
-## Data guide
-
-## Requirements
-
+## License
+The following licenses apply:
+- for the code on this repository: the GNU General Public License Version 3 (see license file)
+- for the data produced by the code on this repository: the CC-BY 4.0 license (see license file)
+- for the underlying ecoinvent and exiobase data used by the code on this repository: this data is subject to the licenses of the respective databases (see https://ecoinvent.org/ and https://www.exiobase.eu/).
