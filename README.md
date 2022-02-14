@@ -25,6 +25,8 @@ This is followed by a discussion of
 - limitations
 
 ## Scientific paper
+[![Zenodo DOI](https://zenodo.org/badge/doi/10.5281/zenodo.6077868.svg)](https://zenodo.org/badge/doi/10.5281/zenodo.6077868.svg)
+
 LINK WILL BE ADDED AS SOON AS IT IS PUBLISHED
 
 ## A quick guide to code and data
