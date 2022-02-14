@@ -1,0 +1,11 @@
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+pickle
+os
+itertools
+shutil
+math
+adjustText
